@@ -1,11 +1,14 @@
 
+All files from https://github.com/JiaoXianjun/multi-rtl-sdr-calibration
+
 set_rate_tcp.m
 set_gain_tcp.m
 set_freq_tcp.m
 raw2iq.m
 
-
 scan_FM_band_FFT_avg_PSD.m (derived work by A P Nicholson)
+
+
 
 
 The MIT License (MIT)
