@@ -151,6 +151,11 @@ for freq_index=1: length(centre_freqs)
     title(['Enhanced envelope spectrum ' num2str(freq_sampling)]);
     xlabel('cyclic frequency \alpha (Hz)')
 
+    
+    %
+    % Feature detection. Find peaks
+    %
+    
     [p,f] = findpeaks( yyy , alpha(2:end) , 'MinPeakHeight', mean(yyy)*8 );
     
     disp([' Found ' num2str(length(p)) '  Mean of spectrum is ' num2str(mean(yyy))]);

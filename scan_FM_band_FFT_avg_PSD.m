@@ -31,7 +31,7 @@ sample_rate = 2.048e6; % sampling rate of rtlsdr
 
 %we want num_samples to be power of 2.
 %
-num_samples_exponent = 20;
+num_samples_exponent = 18;
 
 %
 % Implied parameters
@@ -82,10 +82,8 @@ high_thresh = -50;
 low_thresh = -60;
         
 
-
-%for fftAvg=1: fft_avg_number
 while 1
-    disp(['Starting averaging FFT spectrum loop number ' num2str(counter) ' out of mod ' num2str(fft_avg_number)]);
+    % disp(['Starting averaging FFT spectrum loop number ' num2str(counter) ' out of mod ' num2str(fft_avg_number)]);
        
     % dont plot each time.
     hold on;
@@ -254,6 +252,11 @@ while 1
 
         fprintf('---- start ---- Time %s\n', datestr(now,'HH:MM:SS.FFF'));
         
+        %
+        % Feature detection. Find peaks
+        %
+    
+    
         fft_avg_db = 10*log10(fft_avg);
         [pks, frqs] = findpeaks(fft_avg_db, total_freq, 'MinPeakHeight', high_thresh, 'MinPeakDistance', 200e3, 'MinPeakWidth', 2 * freq_step);
         
