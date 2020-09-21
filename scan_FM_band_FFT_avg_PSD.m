@@ -79,7 +79,7 @@ counter = 1;
 % Thresholds of peak detection.
 %
 high_thresh = -50;
-low_thresh = -60;
+low_thresh = -55;
         
 
 while 1

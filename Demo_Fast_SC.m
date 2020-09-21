@@ -1,5 +1,14 @@
+
+% RF sensing example
+% 
+% Andy Nicholson
+
+% Adapted from ::
 % This script demonstrates the use of the Fast Spectral Correlation code
 % "Fast_SC.m" on a synthetic cyclostationary signal.
+% https://au.mathworks.com/matlabcentral/fileexchange/60561-fast_sc-x-nw-alpha_max-fs-opt
+% Jerome Antoni (2020). Fast_SC(x,Nw,alpha_max,Fs,opt) (https://www.mathworks.com/matlabcentral/fileexchange/60561-fast_sc-x-nw-alpha_max-fs-opt), MATLAB Central File Exchange. Retrieved September 21, 2020.
+
 
 clear all
 close all
