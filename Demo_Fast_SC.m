@@ -45,11 +45,11 @@ close all
 gain = 2;
 sample_rate = 2.048e6;
 
-centre_freqs = [ 87.8000   90.9000   94.1000   95.7000   96.5000   97.3000   98.1000   98.9000  105.3000  106.9000 ];
+%centre_freqs = [ 87.8000   90.9000   94.1000   95.7000   96.5000   97.3000   98.1000   98.9000  105.3000  106.9000 ];
 
 %centre_freqs = [ 87.7 87.8000 87.9 ];
 
-%centre_freqs = [ 106.6 106.7 106.8 106.9 107.0 ];
+centre_freqs = [ 98.9 99.35 105.3  ];
 
 % Scanning loop.
 for freq_index=1: length(centre_freqs)
